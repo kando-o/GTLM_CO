@@ -2,11 +2,14 @@
 {
     width: 90%;
     margin: auto;
-    /* border: 1px black solid; */
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url(/Fond/GTLM_LStyle_1.jpg);
 }
-body{
-    /* background-color: rgba(219, 126, 20, 0.829); */
+body
+{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
 }
 header
 {
@@ -17,22 +20,41 @@ header
     grid-gap: 10px; /*espace entre les cellules de grip*/
     width: 90%;
     margin-left: 5%;
-    background: url(Images/separateur.png) repeat-x bottom;
+    /* background: url(Images/separateur.png) repeat-x bottom; */
+    border-bottom: 1px solid black ;
 }
 header h1
 {
     font-family: 'BallparkWeiner', serif;
 }
-.logo_contener p
+/*TEXT BRUT*/
+.master_border_nice
 {
-    color: rgb(0, 0, 0);
+    padding-top: 15px;
 }
-.logo_contener p:hover
+.border_nice
 {
-    border-bottom: 1px solid black;
-    width: 140px;
+    color: rgb(230, 164, 102);
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+/*TEXT AVANT INTRUCTION*/
+.border_nice::after
+{
+    content: '';
+    width: 0%;
+    height: 3px; /*Hauteur de la bordure*/
+    background: brown;
+    position: absolute;
+    bottom: 0%; left: 50%;
+    border-radius: 5px;
     transition: 500ms ease;
-    border-radius: 2px;
+}
+.border_nice:hover::after
+{
+    left: 0%;
+    width: 100%;
 }
 .logo_contener
 {
@@ -63,15 +85,16 @@ header h1
 nav
 {
     float: left;
-    grid-column: 10 / span 3 ;
+    grid-column:  8/ span 5 ;
     grid-row: 1;
     font-size: 1.3em; 
     text-align: center;
+    
 }
 nav ul
 {
     margin-top: 80px;
-    margin-left: 5px;
+    margin-left: 38%;
 }
 nav li 
 {
@@ -92,7 +115,7 @@ nav a /* TRAITEMENT DU TEXTE DE LA LISTE*/
 }
 nav a:hover
 {   
-    color: rgb(255, 255, 255);
+    color: rgb(230, 164, 102);
     border-bottom: rgb(0, 0, 0) 3px solid;
     transition: 500ms ease;
     border-radius: 2px;
@@ -108,12 +131,14 @@ nav a:hover
     overflow: hidden;
     margin-top: 5px;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black ;
+    box-shadow: 5px 5px 5px rgb(230, 164, 102);
+    margin-top: 20px;
+
 }
 .img_1
 {
     position: absolute;
-    width: 296px;
+    width: 350px;
     height: 300px;
     left: 0px;
     transition: all ease 2s;
@@ -124,11 +149,13 @@ nav a:hover
 {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+
 }
 .img_2
 {
     position: absolute;
-    width: 315px;
+    width: 350px;
     height: 300px;
     left: 200px;
     transition: all ease 2s;
@@ -143,10 +170,10 @@ nav a:hover
 .img_3
 {
     position: absolute;
-    width: 390px;
+    width: 420px;
     height: 305px;
     overflow: hidden;
-    left: 500px;
+    left: 35%;
     transition: all ease 2s;
     opacity: 0.7;
     background-color: red;
@@ -159,12 +186,11 @@ nav a:hover
 .img_4
 {
     position: absolute;
-    width: 300px;
+    width: 320px;
     height: 300px;
     right: 245px;
     transition: all ease-out 2s;
-    opacity: 0.7;
-    /* background-color: rgb(22, 68, 165); */
+    opacity: 0.5;
 }
 .img_4 img
 {
@@ -174,9 +200,9 @@ nav a:hover
 .img_5
 {
     position: absolute;
-    width: 300px;
+    width: 400px;
     height: 300px;
-    right: 0px;
+    right: -35px;
     transition: all ease 2s;
     opacity: 0.7;
     background-color: sienna;
@@ -185,6 +211,8 @@ nav a:hover
 {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+
 }
 .banner div:hover
 {
