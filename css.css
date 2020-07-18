@@ -359,7 +359,6 @@ footer
          display: flex;
          justify-content: center;
      }
-    
      .section1
      {
         flex-direction: column;
@@ -368,6 +367,7 @@ footer
      }
      footer
      {
+        display: flex;
         flex-direction: column;
         align-items: center;
      }
@@ -378,25 +378,11 @@ footer
 
     }
  }
+
  @media only screen and (min-width: 1080px) and (max-width: 2500px)
     /* MEDIA FOR GIGA SCREEN */
 {
-        .img_1
-    {
-        position: absolute;
-        width: 350px;
-        height: 300px;
-        left: 0px;
-        transition: all ease 2s;
-        opacity: 0.7;
-        background-color: rgb(51, 43, 59);
-    }
-    .img_1 img
-    {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-    }
+    
     .img_2
     {
         position: absolute;
@@ -408,22 +394,6 @@ footer
         background-color: black;
     }
     .img_2 img
-    {
-        width: 100%;
-        height: 100%;
-    }
-    .img_3
-    {
-        position: absolute;
-        width: 420px;
-        height: 305px;
-        overflow: hidden;
-        left: 35%;
-        transition: all ease 2s;
-        opacity: 0.7;
-        background-color: red;
-    }
-    .img_3 img
     {
         width: 100%;
         height: 100%;
@@ -442,20 +412,5 @@ footer
         width: 100%;
         height: 100%;
     }
-    .img_5
-    {
-        position: absolute;
-        width: 400px;
-        height: 300px;
-        right: -35px;
-        transition: all ease 2s;
-        opacity: 0.7;
-        background-color: sienna;
-    }
-    .img_5 img
-    {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-    }
+   
 }
